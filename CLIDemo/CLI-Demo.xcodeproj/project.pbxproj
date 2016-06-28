@@ -1,0 +1,192 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_CLI_Demo);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_CLI_Demo = {
+            isa = PBXGroup;
+            name = CLI-Demo;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/cmd_help.swift', '__PBXFileRef_Sources/cmd_run.swift', '__PBXFileRef_Sources/cmd_update.swift', '__PBXFileRef_Sources/command.swift', '__PBXFileRef_Sources/main.swift', '__PBXFileRef_Sources/utils.swift');
+        };
+        '__PBXFileRef_Sources/cmd_help.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'cmd_help.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/cmd_run.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'cmd_run.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/cmd_update.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'cmd_update.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/command.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'command.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'main.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/utils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'utils.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_CLI_Demo = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_CLI_Demo;
+            buildPhases = (CompilePhase_CLI_Demo, ___LinkPhase_CLI_Demo);
+            buildRules = ();
+            dependencies = ();
+            name = CLI-Demo;
+            productName = CLI_Demo;
+            productReference = _____Product_CLI_Demo;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_CLI_Demo = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = 'CLI-Demo';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_CLI_Demo = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/cmd_help.swift', '__src_cc_ref_Sources/cmd_run.swift', '__src_cc_ref_Sources/cmd_update.swift', '__src_cc_ref_Sources/command.swift', '__src_cc_ref_Sources/main.swift', '__src_cc_ref_Sources/utils.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/cmd_help.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/cmd_help.swift';
+        };
+        '__src_cc_ref_Sources/cmd_run.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/cmd_run.swift';
+        };
+        '__src_cc_ref_Sources/cmd_update.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/cmd_update.swift';
+        };
+        '__src_cc_ref_Sources/command.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/command.swift';
+        };
+        '__src_cc_ref_Sources/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/main.swift';
+        };
+        '__src_cc_ref_Sources/utils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/utils.swift';
+        };
+        ___LinkPhase_CLI_Demo = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_CLI_Demo = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_CLI_Demo, _ReleaseConf_CLI_Demo);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_CLI_Demo = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_CLI_Demo = {
+            isa = XCBuildConfiguration;
+            buildSettings = { OTHER_SWIFT_FLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_CLI_Demo = {
+            isa = PBXTargetDependency;
+            target = ______Target_CLI_Demo;
+        };
+        '__PBXFileRef_CLI-Demo.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'CLI-Demo.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_CLI-Demo.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_CLI_Demo);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (_____Product_CLI_Demo);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_CLI-Demo.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_CLI-Demo.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
