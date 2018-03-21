@@ -11,8 +11,7 @@ func getCommand(id: String, commands: [Command.Type]) -> Command.Type? {
         .first
 }
 
-@noreturn func fail(message: String) {
+func fail(message: String) {
     print()
     print("Error: \(message)")
-    exit(1)
 }
